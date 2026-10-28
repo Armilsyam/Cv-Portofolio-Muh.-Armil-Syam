@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muh. Armil Syam, S.T., M.Kom. (Cand.) - CV & Portofolio Resmi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .print-only {
+                display: block !important;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .dark .glass-card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(51, 65, 85, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 font-sans transition-colors duration-300">
+
+    <!-- Navbar (No Print) -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-white font-extrabold text-lg shadow-md">
+                    AS
+                </div>
+                <div>
+                    <span class="font-bold text-base tracking-tight block leading-none">MUH. ARMIL SYAM</span>
+                    <span class="text-xs text-blue-600 dark:text-blue-400 font-medium">Data Science • IT Infra • Creative</span>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+                <a href="#tentang" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Profil</a>
+                <a href="#pengalaman" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Pengalaman</a>
+                <a href="#portofolio" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Portofolio & Riset</a>
+                <a href="#publikasi" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Publikasi</a>
+                <a href="#sertifikasi" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Sertifikasi</a>
+                <a href="#keahlian" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Keahlian</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <button onclick="toggleTheme()" class="p-2.5 rounded-xl bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-700 transition" title="Ubah Tema">
+                    <i id="theme-icon" class="fa-solid fa-moon"></i>
+                </button>
+                <button onclick="window.print()" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold shadow-md shadow-blue-500/20 flex items-center gap-2 transition">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Cetak / PDF CV</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 no-print">
+
+        <!-- Hero Section -->
+        <section id="tentang" class="relative rounded-3xl bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 text-white p-8 sm:p-12 mb-12 overflow-hidden shadow-2xl">
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 space-y-5">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        Tersedia untuk Kolaborasi & Peluang Profesional (2026)
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+                        Muh. Armil Syam, <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">S.T., M.Kom. (Cand.)</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-blue-200 font-medium">
+                        Data Scientist & AI Researcher • IT Infrastructure Specialist • Senior Creative Designer
+                    </p>
+
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-3xl">
+                        Profesional Teknologi Informasi dengan <strong>5+ tahun pengalaman</strong> lintas industri strategis multinasional (Kawasan Industri IMIP Morowali), instansi pemerintah (Kementerian PUPR), dan pengelolaan integritas data korporat. Menyelesaikan riset Tesis Magister (S2) Teknik Informatika di <strong>Universitas Pamulang (2026)</strong> mengenai <em>Hybrid Artificial Intelligence</em>. Menggabungkan ketangguhan teknis infrastruktur jaringan, ketajaman analisis <em>Data Science</em>, serta kreativitas komunikasi visual & penulis buku nasional.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 pt-2 text-xs sm:text-sm text-slate-200">
+                        <span class="flex items-center gap-2 bg-white/10 px-3.5 py-2 rounded-xl">
+                            <i class="fa-solid fa-location-dot text-blue-400"></i> Kaduhejo, Pandeglang, Banten
+                        </span>
+                        <a href="mailto:muh.armilsyamsyam@gmail.com" class="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-3.5 py-2 rounded-xl transition">
+                            <i class="fa-solid fa-envelope text-blue-400"></i> muh.armilsyamsyam@gmail.com
+                        </a>
+                        <a href="https://wa.me/6282291544262" target="_blank" class="flex items-center gap-2 bg-emerald-600/30 border border-emerald-400/40 hover:bg-emerald-600/50 px-3.5 py-2 rounded-xl transition">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i> +62 822-9154-4262
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 pt-3">
+                        <a href="https://scholar.google.com/citations?user=TDMYDCYAAAAJ&hl=id" target="_blank" class="px-4 py-2.5 rounded-xl bg-white text-slate-900 font-bold text-xs sm:text-sm hover:bg-blue-50 transition flex items-center gap-2 shadow">
+                            <i class="fa-solid fa-graduation-cap text-blue-600"></i> Google Scholar
+                        </a>
+                        <a href="https://www.youtube.com/@muharmilsyam" target="_blank" class="px-4 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-semibold text-xs sm:text-sm transition flex items-center gap-2 shadow">
+                            <i class="fa-brands fa-youtube"></i> YouTube (@muharmilsyam)
+                        </a>
+                        <a href="https://www.bukuloka.com/writers/muharmilsyamst" target="_blank" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-xs sm:text-sm transition flex items-center gap-2">
+                            <i class="fa-solid fa-book-open text-amber-400"></i> Profil Penulis Bukuloka
+                        </a>
+                        <a href="https://hub.ekraf.go.id/users/ef0630a1-fc02-4618-8410-5f8d86ee2510" target="_blank" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-xs sm:text-sm transition flex items-center gap-2">
+                            <i class="fa-solid fa-palette text-pink-400"></i> EKRAF Hub RI
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Highlight Stats Card -->
+                <div class="lg:col-span-4 grid grid-cols-2 gap-4">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5 rounded-2xl text-center">
+                        <div class="text-3xl font-extrabold text-blue-400">5+ Thn</div>
+                        <div class="text-xs text-slate-300 mt-1">Pengalaman IT, Data & Desain</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5 rounded-2xl text-center">
+                        <div class="text-3xl font-extrabold text-emerald-400">S2 TI</div>
+                        <div class="text-xs text-slate-300 mt-1">Tesis Hybrid AI UNPAM (2026)</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5 rounded-2xl text-center">
+                        <div class="text-3xl font-extrabold text-amber-400">5+ Karya</div>
+                        <div class="text-xs text-slate-300 mt-1">Jurnal KOMMAS, Buku & Artikel AI</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5 rounded-2xl text-center">
+                        <div class="text-3xl font-extrabold text-pink-400">13.2K+</div>
+                        <div class="text-xs text-slate-300 mt-1">Views Bulanan Kreator Konten</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Grid -->
+        <div id="pengalaman" class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-14">
+            <!-- Work Experience -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Pengalaman Kerja Profesional</h2>
+                </div>
+
+                <div class="relative border-l-2 border-blue-500/40 ml-4 pl-6 space-y-8">
+                    <!-- Item 1 -->
+                    <div class="relative group">
+                        <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-blue-600 ring-4 ring-blue-100 dark:ring-slate-900"></div>
+                        <div class="glass-card p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                            <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                                <div>
+                                    <h3 class="font-bold text-lg text-slate-900 dark:text-white">Staf Pendataan & Integrasi Sistem</h3>
+                                    <p class="text-blue-600 dark:text-blue-400 font-semibold text-sm">PT. Rahadyan Integrasi Nusantara • Pandeglang, Banten</p>
+                                </div>
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300">2025 – Sekarang</span>
+                            </div>
+                            <ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-300 space-y-1.5 mt-3">
+                                <li>Mengelola, memverifikasi, dan memvalidasi integritas data berskala besar untuk menjamin akurasi pelaporan perusahaan.</li>
+                                <li>Melakukan optimasi alur kerja pendataan digital serta integrasi layanan teknologi informasi dan pemasaran digital.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative group">
+                        <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-indigo-600 ring-4 ring-blue-100 dark:ring-slate-900"></div>
+                        <div class="glass-card p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                            <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                                <div>
+                                    <h3 class="font-bold text-lg text-slate-900 dark:text-white">Founder, Creative Director & Freelance Consultant</h3>
+                                    <p class="text-indigo-600 dark:text-indigo-400 font-semibold text-sm">Boyang Digital Nusantara • Pandeglang, Banten</p>
+                                </div>
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300">2024 – Sekarang</span>
+                            </div>
+                            <ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-300 space-y-1.5 mt-3">
+                                <li>Terdaftar sebagai Pelaku Ekonomi Kreatif resmi pada <strong>EKRAF Hub Kementerian Ekonomi Kreatif RI</strong> (Subsektor Desain Komunikasi Visual) dengan 6+ produk kreatif unggulan.</li>
+                                <li>Membina dan melatih pelajar serta masyarakat sekitar dalam digitalisasi pendidikan, literasi AI, dan teknologi masa depan.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="relative group">
+                        <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-400 dark:bg-slate-600 ring-4 ring-blue-100 dark:ring-slate-900"></div>
+                        <div class="glass-card p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                            <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                                <div>
+                                    <h3 class="font-bold text-lg text-slate-900 dark:text-white">Staf IT Infrastructure & Network (PPSJ IT)</h3>
+                                    <p class="text-slate-700 dark:text-slate-300 font-semibold text-sm">PT. QMB New Energy Materials (IMIP Morowali, Sulawesi Tengah)</p>
+                                </div>
+                                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300">Apr 2022 – Nov 2023</span>
+                            </div>
+                            <ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-300 space-y-1.5 mt-3">
+                                <li>Menjaga ketersediaan infrastruktur jaringan komputer, server, manajemen firewall, dan sistem IT di kawasan industri strategis nasional.</li>
+                                <li>Menangani instalasi dan pemeliharaan jaringan <em>Fiber Optic</em>, sistem kamera CCTV kawasan, <em>Desktop Management Engineer</em>, serta otomasi proses teknis.</li>
+                                <li>Merancang materi visual kampanye keselamatan/operasional dan mendukung peningkatan <em>brand awareness</em> internal sebesar 15%.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="relative group">
+                        <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-400 dark:bg-slate-600 ring-4 ring-blue-100 dark:ring-slate-900"></div>
+                        <div class="glass-card p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                            <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                                <div>
+                                    <h3 class="font-bold text-lg text-slate-900 dark:text-white">Staf Pendukung IT & Desainer Grafis</h3>
+                                    <p class="text-slate-700 dark:text-slate-300 font-semibold text-sm">BBWS Pompengan Jeneberang – Kementerian PUPR • Makassar</p>
+                                </div>
+                                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300">Agu 2020 – Mar 2022</span>
+                            </div>
+                            <ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-300 space-y-1.5 mt-3">
+                                <li>Memberikan dukungan teknis operasional IT harian, pemeliharaan <em>database</em>, dan keamanan sistem jaringan kantor pemerintahan.</li>
+                                <li>Merancang desain web informasi publik, ilustrasi produk informasi, logo kegiatan, dan tata letak publikasi visual instansi.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="relative group">
+                        <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-400 dark:bg-slate-600 ring-4 ring-blue-100 dark:ring-slate-900"></div>
+                        <div class="glass-card p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                            <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                                <div>
+                                    <h3 class="font-bold text-lg text-slate-900 dark:text-white">Creative Director & Brand Identity Developer</h3>
+                                    <p class="text-slate-700 dark:text-slate-300 font-semibold text-sm">Jasakite.com & Mandart Production • Sulawesi Barat</p>
+                                </div>
+                                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300">2018 – 2021</span>
+                            </div>
+                            <p class="text-sm text-slate-600 dark:text-slate-300 mt-2">
+                                Memimpin tim kreatif pada <em>startup</em> layanan digital dalam pengembangan website, desain identitas visual, animasi, <em>motion graphics</em>, dan produksi video.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education & Organization -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold">Riwayat Pendidikan</h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="glass-card p-6 rounded-2xl border-l-4 border-l-emerald-500">
+                            <div class="flex justify-between items-start">
+                                <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Magister (S2) • 2025 – 2026</span>
+                                <span class="text-xs bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 px-2.5 py-0.5 rounded-md font-semibold">NIM: 241012050114</span>
+                            </div>
+                            <h3 class="font-bold text-lg mt-1">S2 Teknik Informatika</h3>
+                            <p class="text-sm font-medium text-slate-600 dark:text-slate-300">Universitas Pamulang (UNPAM), Tangerang Selatan</p>
+                            <div class="mt-3 p-3 rounded-xl bg-slate-100 dark:bg-slate-800/90 text-xs space-y-1">
+                                <div class="font-bold text-slate-800 dark:text-slate-200">Tesis Magister (Agustus 2026):</div>
+                                <p class="italic text-slate-600 dark:text-slate-300">"Optimasi Desain Material High-Entropy Alloy (HEA) Fe-Cr-Ni-Mo-Al pada Reaktor Nuklir Generasi IV Berbasis Hybrid Artificial Intelligence"</p>
+                                <p class="text-slate-500 dark:text-slate-400 pt-1">Pembimbing: Dr. Sudarno, DEA & Dr. Choirul Basir, S.Si., M.Si.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-6 rounded-2xl border-l-4 border-l-blue-500">
+                            <div class="flex justify-between items-start">
+                                <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Sarjana (S1) • 2016 – 2020</span>
+                                <span class="text-xs bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 px-2.5 py-0.5 rounded-md font-bold">IPK: 3.52 / 4.00</span>
+                            </div>
+                            <h3 class="font-bold text-lg mt-1">S1 Teknik Informatika (S.T.)</h3>
+                            <p class="text-sm font-medium text-slate-600 dark:text-slate-300">Universitas Sulawesi Barat (UNSULBAR), Majene</p>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Fokus: Rekayasa Web, Internet of Things (IoT), Teknik Jaringan, & Desain Grafis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership & Social Impact -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-9 h-9 rounded-xl bg-amber-500 text-white flex items-center justify-center">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold">Kepemimpinan & Organisasi</h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="glass-card p-5 rounded-2xl">
+                            <div class="flex justify-between items-center">
+                                <h4 class="font-bold text-sm">Ketua — Boyang Digital Nusantara</h4>
+                                <span class="text-xs text-amber-600 font-bold">2025 – Sekarang</span>
+                            </div>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">Mengkoordinir, membina, dan melatih anak-anak pelajar serta masyarakat sekitar di bidang digitalisasi pendidikan dan teknologi masa depan.</p>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-2xl">
+                            <div class="flex justify-between items-center">
+                                <h4 class="font-bold text-sm">Ketua Umum — GenBI Sulawesi Barat (Bank Indonesia)</h4>
+                                <span class="text-xs text-amber-600 font-bold">2017 – 2018</span>
+                            </div>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">Memimpin penerima beasiswa Bank Indonesia Provinsi Sulawesi Barat, menjadi mitra strategis KPw BI, serta mewakili daerah dalam forum nasional.</p>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-2xl">
+                            <div class="flex justify-between items-center">
+                                <h4 class="font-bold text-sm">Relawan Respon Bencana — Inisiatif Zakat Indonesia (IZI)</h4>
+                                <span class="text-xs text-amber-600 font-bold">2021</span>
+                            </div>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">Terlibat dalam penyaluran logistik, pembuatan peta distribusi bantuan IZI, dan program pemulihan psikososial warga terdampak Gempa Sulawesi Barat.</p>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-2xl">
+                            <div class="flex justify-between items-center">
+                                <h4 class="font-bold text-sm">Koordinator IT — Duta Anti Narkoba & FKPD Majene</h4>
+                                <span class="text-xs text-amber-600 font-bold">2016 – 2020</span>
+                            </div>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">Mengelola media kampanye digital Duta Anti Narkoba dan aktif di Forum Komunikasi Pemuda Desa se-Kabupaten Majene.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Portfolio Filter Section -->
+        <section id="portofolio" class="mb-16">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400">Hasil Karya & Proyek Unggulan</span>
+                    <h2 class="text-3xl font-extrabold mt-1">Galeri Portofolio Multidisiplin</h2>
+                </div>
+                <div class="flex flex-wrap gap-2" id="portfolio-filters">
+                    <button onclick="filterPortfolio('all')" class="filter-btn active px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white transition">Semua Karya</button>
+                    <button onclick="filterPortfolio('ai-data')" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-100 transition">Data Science & AI</button>
+                    <button onclick="filterPortfolio('it-infra')" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-100 transition">IT Infrastructure</button>
+                    <button onclick="filterPortfolio('creative')" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-100 transition">Creative & Media</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item glass-card rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 transition duration-300 shadow-sm" data-category="ai-data">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 text-xs font-bold">Riset Hybrid AI • 2026</span>
+                            <i class="fa-solid fa-atom text-xl text-purple-500"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Optimasi Material High-Entropy Alloy (HEA) Reaktor Nuklir Gen-IV</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Pengembangan model komputasi cerdas berbasis <em>Hybrid Artificial Intelligence</em> untuk mengoptimalkan desain paduan Fe-Cr-Ni-Mo-Al pada reaktor nuklir Generasi IV (Tesis S2 Universitas Pamulang).
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Machine Learning</span>
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Optimization Modeling</span>
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Materials Informatics</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item glass-card rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 transition duration-300 shadow-sm" data-category="ai-data">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 text-xs font-bold">Big Data & Workflow • 2025</span>
+                            <i class="fa-solid fa-database text-xl text-blue-500"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Sistem Validasi & Integritas Pendataan Skala Besar</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Implementasi kontrol kualitas data dan optimasi alur kerja pendataan digital di PT. Rahadyan Integrasi Nusantara untuk meningkatkan akurasi laporan eksekutif secara signifikan.
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Data Validation</span>
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Quantitative Analytics</span>
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Process Automation</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item glass-card rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 transition duration-300 shadow-sm" data-category="it-infra">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 text-xs font-bold">Industrial IT • 2022–2023</span>
+                            <i class="fa-solid fa-network-wired text-xl text-emerald-500"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Infrastruktur Fiber Optic, CCTV & Keamanan Jaringan IMIP</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Pengelolaan topologi jaringan industri, pemeliharaan <em>server/firewall</em>, instalasi <em>Fiber Optic</em>, dan pengawasan CCTV terpadu di PT. QMB New Energy Materials Morowali.
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Fiber Optic</span>
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Firewall & Security</span>
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">CCTV Surveillance</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item glass-card rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 transition duration-300 shadow-sm" data-category="ai-data">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 text-xs font-bold">Edukasi AI & Web • 2025</span>
+                            <i class="fa-solid fa-robot text-xl text-amber-500"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Pengembangan Web Berbasis Prompt Engineering AI</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Program pemberdayaan literasi digital Karang Taruna melalui pemanfaatan Generative AI dan teknik <em>Prompting</em> terstruktur untuk membangun website fungsional dengan cepat.
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Prompt Engineering</span>
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Web Development</span>
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Jurnal KOMMAS</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item glass-card rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 transition duration-300 shadow-sm" data-category="it-infra creative">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-cyan-100 dark:bg-cyan-900/40 text-cyan-700 dark:text-cyan-300 text-xs font-bold">GovTech & GIS • 2020–2022</span>
+                            <i class="fa-solid fa-map-location-dot text-xl text-cyan-500"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Desain Web Informasi Publik PUPR & Pemetaan Bencana IZI</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Perancangan antarmuka sistem informasi publik dan publikasi grafis di BBWS Pompengan Jeneberang Makassar serta pembuatan peta tematik distribusi bantuan bencana Gempa Sulbar.
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">UI/UX Web Design</span>
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Infographic Mapping</span>
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Public Communication</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item glass-card rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 transition duration-300 shadow-sm" data-category="creative">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-pink-100 dark:bg-pink-900/40 text-pink-700 dark:text-pink-300 text-xs font-bold">Digital Media • 2024–2026</span>
+                            <i class="fa-solid fa-clapperboard text-xl text-pink-500"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Ekosistem Boyang Digital & Kanal YouTube (@muharmilsyam)</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Pengelolaan portofolio produk Desain Komunikasi Visual di EKRAF Hub RI serta produksi 199+ konten video kreatif & dokumentasi komunitas di YouTube (10.8K+ menit tonton/bulan).
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Brand Identity</span>
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Video Production</span>
+                        <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Social Media Insight</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications & Books Section -->
+        <section id="publikasi" class="mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-9 h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold">Publikasi Ilmiah, Buku & Gagasan Teknologi</h2>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Terindeks di Google Scholar, Garuda Kemdiktisaintek, dan Bukuloka Literasi Bangsa</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="glass-card p-5 rounded-2xl flex gap-4 items-start">
+                    <div class="p-3 rounded-xl bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-300 font-bold text-sm">2026</div>
+                    <div>
+                        <span class="text-[11px] font-bold uppercase text-indigo-600 dark:text-indigo-400">Tesis Magister Informatika • Universitas Pamulang</span>
+                        <h4 class="font-bold text-sm mt-0.5">Optimasi Desain Material High-Entropy Alloy (HEA) Fe-Cr-Ni-Mo-Al pada Reaktor Nuklir Generasi IV Berbasis Hybrid Artificial Intelligence</h4>
+                        <p class="text-xs text-slate-500 mt-1">Penulis Utama: Muh. Armil Syam (Agustus 2026)</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl flex gap-4 items-start">
+                    <div class="p-3 rounded-xl bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 font-bold text-sm">2025</div>
+                    <div>
+                        <span class="text-[11px] font-bold uppercase text-blue-600 dark:text-blue-400">Jurnal Nasional (Garuda) • KOMMAS Vol. 6 No. 3</span>
+                        <h4 class="font-bold text-sm mt-0.5">Literasi Digital Karang Taruna: Edukasi Pemanfaatan AI dan Strategi Prompting Dalam Pembuatan Website</h4>
+                        <p class="text-xs text-slate-500 mt-1">KOMMAS: Jurnal Pengabdian Kepada Masyarakat, Hal. 225–230 (Oktober 2025)</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl flex gap-4 items-start">
+                    <div class="p-3 rounded-xl bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-300 font-bold text-sm">2025</div>
+                    <div>
+                        <span class="text-[11px] font-bold uppercase text-emerald-600 dark:text-emerald-400">Buku Diterbitkan • Bukuloka Literasi Bangsa</span>
+                        <h4 class="font-bold text-sm mt-0.5">1) Membangun Masa Depan Pendidikan Daerah Tertinggal: Teknologi, Budaya, dan Kemandirian<br>2) Transformasi Manajemen SDM di Era Digital dan Globalisasi</h4>
+                        <p class="text-xs text-slate-500 mt-1">Penulis Kolaborasi: Muh. Armil Syam, S.T., dkk.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl flex gap-4 items-start">
+                    <div class="p-3 rounded-xl bg-amber-100 dark:bg-amber-900/50 text-amber-600 dark:text-amber-300 font-bold text-sm">2025</div>
+                    <div>
+                        <span class="text-[11px] font-bold uppercase text-amber-600 dark:text-amber-400">Artikel Opini & Riset Terbuka • Google Scholar</span>
+                        <h4 class="font-bold text-sm mt-0.5">• Konvergensi AI dan IoT: Transformasi Paradigma Riset dan Kebijakan Publik<br>• Asisten Kesehatan Pribadi Berbasis AI yang Holistik</h4>
+                        <p class="text-xs text-slate-500 mt-1">Diterbitkan di LinkedIn Pulse & Limrasyam WordPress (Juli 2025)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="sertifikasi" class="mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-9 h-9 rounded-xl bg-cyan-600 text-white flex items-center justify-center">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+                <h2 class="text-2xl font-bold">Lisensi & Sertifikasi Kompetensi</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="glass-card p-4 rounded-2xl border-t-4 border-t-blue-600">
+                    <span class="text-[11px] font-bold text-blue-600">2025 – 2030</span>
+                    <h4 class="font-bold text-sm mt-1">Sertifikasi Kompetensi Data Science</h4>
+                    <p class="text-xs text-slate-500 mt-1">LKP / Universitas Pamulang — Analisis Data, Pemodelan Statistik & Visualisasi</p>
+                </div>
+
+                <div class="glass-card p-4 rounded-2xl border-t-4 border-t-indigo-600">
+                    <span class="text-[11px] font-bold text-indigo-600">Oktober 2026</span>
+                    <h4 class="font-bold text-sm mt-1">Webinar Automation</h4>
+                    <p class="text-xs text-slate-500 mt-1">ONE Indonesia — E-Certificate of Participation (21 Oktober 2026)</p>
+                </div>
+
+                <div class="glass-card p-4 rounded-2xl border-t-4 border-t-emerald-600">
+                    <span class="text-[11px] font-bold text-emerald-600">Oktober 2025</span>
+                    <h4 class="font-bold text-sm mt-1">Pengembangan Produk AI (SKKNI)</h4>
+                    <p class="text-xs text-slate-500 mt-1">Digital Talent Scholarship (Komdigi RI) & Dicoding</p>
+                </div>
+
+                <div class="glass-card p-4 rounded-2xl border-t-4 border-t-cyan-600">
+                    <span class="text-[11px] font-bold text-cyan-600">Juni 2025 – 2028</span>
+                    <h4 class="font-bold text-sm mt-1">Prompt Engineering untuk Software Developer</h4>
+                    <p class="text-xs text-slate-500 mt-1">Dicoding Indonesia • ID: ERZREQ072XYV</p>
+                </div>
+
+                <div class="glass-card p-4 rounded-2xl border-t-4 border-t-amber-500">
+                    <span class="text-[11px] font-bold text-amber-600">Mei 2025 – 2028</span>
+                    <h4 class="font-bold text-sm mt-1">Belajar Dasar Cloud dan Gen AI di AWS</h4>
+                    <p class="text-xs text-slate-500 mt-1">Dicoding Indonesia • ID: ERZRE3W42XYV</p>
+                </div>
+
+                <div class="glass-card p-4 rounded-2xl border-t-4 border-t-purple-500">
+                    <span class="text-[11px] font-bold text-purple-600">Mei 2025 – 2028</span>
+                    <h4 class="font-bold text-sm mt-1">AI Praktis untuk Produktivitas</h4>
+                    <p class="text-xs text-slate-500 mt-1">Dicoding Indonesia • ID: 1RXYEBY1KZVM</p>
+                </div>
+
+                <div class="glass-card p-4 rounded-2xl border-t-4 border-t-pink-500">
+                    <span class="text-[11px] font-bold text-pink-600">Oktober 2025</span>
+                    <h4 class="font-bold text-sm mt-1">Optimasi Instagram Insight & Canva Advanced</h4>
+                    <p class="text-xs text-slate-500 mt-1">Pusat Pengembangan Literasi Digital — BPSDM Komdigi RI</p>
+                </div>
+
+                <div class="glass-card p-4 rounded-2xl border-t-4 border-t-rose-500">
+                    <span class="text-[11px] font-bold text-rose-600">2021 & 2023</span>
+                    <h4 class="font-bold text-sm mt-1">Kompetensi BDI Kemenperin & Digital Marketing</h4>
+                    <p class="text-xs text-slate-500 mt-1">Balai Diklat Industri Kemenperin RI & KursusDigital.id</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & References -->
+        <section id="keahlian" class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div class="lg:col-span-8 glass-card p-6 sm:p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-blue-600"></i> Peta Kompetensi Teknis & Manajerial
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-blue-600 mb-3">Data Science & Artificial Intelligence</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Data Mining & Modeling</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Hybrid AI Optimization</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Big Data Validation</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Prompt Engineering</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">AWS Cloud & Gen AI</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Quantitative Analytics</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-3">IT Infrastructure & Networking</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">LAN/WAN & Fiber Optic</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Firewall & Network Security</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Hardware/Software Troubleshooting</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">CCTV System Engineer</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Database Administration</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Internet of Things (IoT)</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-pink-600 mb-3">Creative Visual, Web & Media</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Adobe Creative Suite (Ps, Ai, Id, Pr, Ae)</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">CorelDraw & Procreate</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Figma & UI/UX Web Design</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Canva (Advanced Certified)</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Digital Marketing & Copywriting</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-amber-600 mb-3">Kepemimpinan & Bahasa</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Project Management</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Public Speaking & Training</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold">Cross-functional Leadership</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs font-bold">Indonesia (Native)</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs font-bold">Inggris (Intermediate)</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs font-bold">Mandarin (Basic)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- References Card -->
+            <div class="lg:col-span-4 glass-card p-6 sm:p-8 rounded-3xl flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold mb-5 flex items-center gap-2">
+                        <i class="fa-solid fa-address-book text-emerald-600"></i> Referensi Profesional
+                    </h3>
+                    <div class="space-y-4 text-xs">
+                        <div class="p-3.5 rounded-2xl bg-slate-100 dark:bg-slate-800/80">
+                            <div class="font-bold text-sm text-slate-900 dark:text-white">Dr. Arya Adhyaksa Waskita, S.T., M.Si., M.T.</div>
+                            <div class="text-slate-500 dark:text-slate-400">Pembimbing Data Science / Universitas Pamulang</div>
+                            <div class="mt-1 font-semibold text-blue-600 dark:text-blue-400"><i class="fa-solid fa-phone mr-1"></i> 0815-8403-4450</div>
+                        </div>
+
+                        <div class="p-3.5 rounded-2xl bg-slate-100 dark:bg-slate-800/80">
+                            <div class="font-bold text-sm text-slate-900 dark:text-white">Fedellysia Agatha</div>
+                            <div class="text-slate-500 dark:text-slate-400">HRD / GA — PT. QMB New Energy Materials</div>
+                            <div class="mt-1 font-semibold text-blue-600 dark:text-blue-400"><i class="fa-solid fa-phone mr-1"></i> 0812-1335-8521</div>
+                        </div>
+
+                        <div class="p-3.5 rounded-2xl bg-slate-100 dark:bg-slate-800/80">
+                            <div class="font-bold text-sm text-slate-900 dark:text-white">Arya Stevan, S.H.</div>
+                            <div class="text-slate-500 dark:text-slate-400">HRD / GA — PT. QMB New Energy Materials</div>
+                            <div class="mt-1 font-semibold text-blue-600 dark:text-blue-400"><i class="fa-solid fa-phone mr-1"></i> 0852-4145-6131</div>
+                        </div>
+
+                        <div class="p-3.5 rounded-2xl bg-slate-100 dark:bg-slate-800/80">
+                            <div class="font-bold text-sm text-slate-900 dark:text-white">Muh. Fahmi Rustan, S.Kom., M.T.</div>
+                            <div class="text-slate-500 dark:text-slate-400">Dosen Teknik Informatika — Universitas Sulawesi Barat</div>
+                            <div class="mt-1 font-semibold text-blue-600 dark:text-blue-400"><i class="fa-solid fa-phone mr-1"></i> 0852-5566-4810</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (No Print) -->
+    <footer class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-xs text-slate-500 no-print">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="font-semibold text-slate-700 dark:text-slate-300">© 2026 Muh. Armil Syam, S.T., M.Kom. (Cand.) — Curriculum Vitae & Portofolio Resmi</p>
+            <p class="mt-1">Tempat, Tanggal Lahir: Lombongan, 28 November 1997 • Status: Menikah • Domisili: Kec. Kaduhejo, Kab. Pandeglang, Banten</p>
+        </div>
+    </footer>
+
+    <!-- ATS-Friendly Print Version (Only visible when printing to PDF) -->
+    <div class="hidden print-only p-6 text-black text-xs leading-normal max-w-4xl mx-auto">
+        <div class="border-b-2 border-black pb-3 mb-4">
+            <h1 class="text-2xl font-extrabold uppercase tracking-wide">MUH. ARMIL SYAM, S.T., M.Kom. (Cand.)</h1>
+            <p class="font-bold text-sm text-gray-800">Data Scientist | IT Infrastructure & Network Specialist | Senior Creative Designer</p>
+            <p class="mt-1 text-gray-700">
+                Kec. Kaduhejo, Kab. Pandeglang, Provinsi Banten • Telp/WA: +62 822-9154-4262 • Email: muh.armilsyamsyam@gmail.com<br>
+                Web: boyangdigital.wordpress.com | limrasyam.wordpress.com • LinkedIn: linkedin.com/in/muh-armilsyam • Google Scholar: Muh. Armil Syam, S.T.
+            </p>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="font-bold uppercase border-b border-gray-400 pb-0.5 mb-1.5 text-sm">PROFIL PROFESIONAL</h2>
+            <p class="text-justify">
+                Profesional Teknologi Informasi, Data Scientist tersertifikasi, dan Spesialis Kreatif Digital dengan pengalaman lebih dari 5 tahun di sektor industri strategis (Kawasan Industri IMIP Morowali), instansi pemerintahan (PUPR), dan integrasi sistem korporat. Telah menyelesaikan Tesis Magister (S2) Teknik Informatika di Universitas Pamulang (Agustus 2026) dengan fokus pada Hybrid Artificial Intelligence. Ahli dalam pengelolaan infrastruktur jaringan IT, validasi big data, pemodelan analitik, serta komunikasi visual & edukasi teknologi.
+            </p>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="font-bold uppercase border-b border-gray-400 pb-0.5 mb-1.5 text-sm">PENDIDIKAN</h2>
+            <div class="mb-2">
+                <div class="flex justify-between font-bold">
+                    <span>Universitas Pamulang (UNPAM) — Magister (S2) Teknik Informatika</span>
+                    <span>2025 – 2026</span>
+                </div>
+                <p>Tesis: <em>"Optimasi Desain Material High-Entropy Alloy (HEA) Fe-Cr-Ni-Mo-Al pada Reaktor Nuklir Generasi IV Berbasis Hybrid Artificial Intelligence"</em> (Agustus 2026).</p>
+            </div>
+            <div>
+                <div class="flex justify-between font-bold">
+                    <span>Universitas Sulawesi Barat (UNSULBAR) — Sarjana (S1) Teknik Informatika (IPK: 3.52 / 4.00)</span>
+                    <span>2016 – 2020</span>
+                </div>
+                <p>Penerima Beasiswa Bank Indonesia & Ketua Umum Generasi Baru Indonesia (GenBI) Sulawesi Barat (2017–2018).</p>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="font-bold uppercase border-b border-gray-400 pb-0.5 mb-1.5 text-sm">PENGALAMAN KERJA</h2>
+            <div class="mb-2.5">
+                <div class="flex justify-between font-bold">
+                    <span>PT. Rahadyan Integrasi Nusantara (Pandeglang, Banten) — Staf Pendataan & Sistem Integrasi</span>
+                    <span>2025 – Sekarang</span>
+                </div>
+                <p>• Mengelola dan memvalidasi integritas data skala besar untuk keakuratan pelaporan perusahaan serta optimasi alur kerja pendataan digital.</p>
+            </div>
+            <div class="mb-2.5">
+                <div class="flex justify-between font-bold">
+                    <span>Boyang Digital Nusantara (Pandeglang, Banten) — Founder, Creative Director & IT Consultant</span>
+                    <span>2024 – Sekarang</span>
+                </div>
+                <p>• Mengelola layanan solusi IT, branding visual, UI/UX, dan pemasaran digital (Terdaftar di EKRAF Hub Kementerian Ekonomi Kreatif RI).</p>
+            </div>
+            <div class="mb-2.5">
+                <div class="flex justify-between font-bold">
+                    <span>PT. QMB New Energy Materials (IMIP Morowali, Sulawesi Tengah) — Staf IT Infrastructure (PPSJ IT)</span>
+                    <span>Apr 2022 – Nov 2023</span>
+                </div>
+                <p>• Bertanggung jawab atas infrastruktur jaringan, Fiber Optic, Firewall, CCTV, troubleshooting hardware/software, dan otomasi operasional.</p>
+            </div>
+            <div class="mb-2.5">
+                <div class="flex justify-between font-bold">
+                    <span>BBWS Pompengan Jeneberang Kementerian PUPR (Makassar) — Staf Pendukung IT & Desainer Grafis</span>
+                    <span>Agu 2020 – Mar 2022</span>
+                </div>
+                <p>• Pemeliharaan sistem IT harian, administrasi database, desain web informasi publik, dan produksi grafis publikasi instansi.</p>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="font-bold uppercase border-b border-gray-400 pb-0.5 mb-1.5 text-sm">PUBLIKASI ILMIAH & BUKU</h2>
+            <ul class="list-disc list-inside space-y-0.5">
+                <li><strong>Jurnal KOMMAS Vol. 6 No. 3 (Okt 2025):</strong> Literasi Digital Karang Taruna: Edukasi Pemanfaatan AI dan Strategi Prompting Dalam Pembuatan Website.</li>
+                <li><strong>Buku (Bukuloka, 2025):</strong> (1) Membangun Masa Depan Pendidikan Daerah Tertinggal; (2) Transformasi Manajemen SDM di Era Digital dan Globalisasi.</li>
+                <li><strong>Artikel Ilmiah Populer (2025):</strong> Konvergensi AI dan IoT: Transformasi Paradigma Riset dan Kebijakan Publik; Asisten Kesehatan Pribadi Berbasis AI.</li>
+            </ul>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="font-bold uppercase border-b border-gray-400 pb-0.5 mb-1.5 text-sm">SERTIFIKASI UTAMA & KEAHLIAN</h2>
+            <p><strong>Sertifikasi:</strong> Kompetensi Data Science (2025–2030), Webinar Automation ONE Indonesia (Okt 2026), Pengembangan Produk AI DTS Komdigi (2025), Prompt Engineering & AWS Cloud Gen AI Dicoding (2025–2028), Canva Advanced Komdigi (2025), BDI Kemenperin RI.</p>
+            <p class="mt-1"><strong>Keahlian:</strong> Data Science, Machine Learning, IT Infrastructure (Fiber Optic, Firewall, CCTV), Adobe Creative Suite, Figma, UI/UX, Project Management.</p>
+        </div>
+
+        <div>
+            <h2 class="font-bold uppercase border-b border-gray-400 pb-0.5 mb-1.5 text-sm">REFERENSI</h2>
+            <p>1. Dr. Arya Adhyaksa Waskita, S.T., M.Si., M.T. (Universitas Pamulang - 081584034450) | 2. Fedellysia Agatha (HRD PT. QMB - 081213358521) | 3. Arya Stevan, S.H. (HRD PT. QMB - 085241456131)</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById('theme-icon');
+            html.classList.toggle('dark');
+            if (html.classList.contains('dark')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
+
+        function filterPortfolio(category) {
+            const items = document.querySelectorAll('.portfolio-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'text-white');
+                btn.classList.add('bg-slate-200', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+            });
+
+            event.currentTarget.classList.remove('bg-slate-200', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+            event.currentTarget.classList.add('bg-blue-600', 'text-white');
+
+            items.forEach(item => {
+                const itemCats = item.getAttribute('data-category');
+                if (category === 'all' || itemCats.includes(category)) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
